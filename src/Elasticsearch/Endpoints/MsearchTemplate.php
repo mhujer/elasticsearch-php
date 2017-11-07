@@ -19,6 +19,9 @@ use Elasticsearch\Transport;
  */
 class MsearchTemplate extends AbstractEndpoint
 {
+    /** @var string */
+    protected $body = null;
+
     /**
      * @param SerializerInterface $serializer
      */
@@ -85,7 +88,7 @@ class MsearchTemplate extends AbstractEndpoint
     }
 
     /**
-     * @return array
+     * @return string
      * @throws \Elasticsearch\Common\Exceptions\RuntimeException
      */
     public function getBody()

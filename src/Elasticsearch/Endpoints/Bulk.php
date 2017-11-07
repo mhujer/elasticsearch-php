@@ -18,6 +18,9 @@ use Elasticsearch\Serializers\SerializerInterface;
  */
 class Bulk extends AbstractEndpoint implements BulkEndpointInterface
 {
+    /** @var string */
+    protected $body = null;
+
     /**
      * @param SerializerInterface $serializer
      */

@@ -18,6 +18,9 @@ use Elasticsearch\Transport;
  */
 class MPercolate extends AbstractEndpoint implements BulkEndpointInterface
 {
+    /** @var string */
+    protected $body = null;
+
     /**
      * @param SerializerInterface $serializer
      */
