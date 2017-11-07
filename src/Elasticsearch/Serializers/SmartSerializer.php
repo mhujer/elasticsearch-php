@@ -50,7 +50,7 @@ class SmartSerializer implements SerializerInterface
      * @param array  $headers Response Headers
      *
      * @throws JsonErrorException
-     * @return array
+     * @return array|string
      */
     public function deserialize($data, $headers)
     {
@@ -72,7 +72,7 @@ class SmartSerializer implements SerializerInterface
      *
      * @param string|null $data
      *
-     * @return array
+     * @return mixed[]|string
      * @throws JsonErrorException
      */
     private function decode($data)

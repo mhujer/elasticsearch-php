@@ -41,7 +41,7 @@ class SearchResponseIterator implements Iterator
     private $current_scrolled_response;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $scroll_id;
 

@@ -87,7 +87,7 @@ class Client
     /** @var callable */
     protected $endpoints;
 
-    /** @var  NamespaceBuilderInterface[] */
+    /** @var \Elasticsearch\Namespaces\AbstractNamespace[] */
     protected $registeredNamespaces = [];
 
     /**

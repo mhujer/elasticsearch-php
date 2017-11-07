@@ -35,7 +35,7 @@ class Transport
     /** @var  int */
     public $retryAttempts = 0;
 
-    /** @var  Connection */
+    /** @var \Elasticsearch\Connections\ConnectionInterface */
     public $lastConnection;
 
     /** @var int  */
@@ -172,7 +172,7 @@ class Transport
      * Returns the last used connection so that it may be inspected.  Mainly
      * for debugging/testing purposes.
      *
-     * @return Connection
+     * @return \Elasticsearch\Connections\ConnectionInterface
      */
     public function getLastConnection()
     {

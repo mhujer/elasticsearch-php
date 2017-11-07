@@ -22,7 +22,7 @@ class SimpleConnectionPool extends AbstractConnectionPool implements ConnectionP
     /**
      * @param bool $force
      *
-     * @return Connection
+     * @return \Elasticsearch\Connections\ConnectionInterface
      * @throws \Elasticsearch\Common\Exceptions\NoNodesAvailableException
      */
     public function nextConnection($force = false)

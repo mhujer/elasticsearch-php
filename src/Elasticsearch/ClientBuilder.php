@@ -56,13 +56,13 @@ class ClientBuilder
     /** @var  LoggerInterface */
     private $tracer;
 
-    /** @var string */
+    /** @var \Elasticsearch\ConnectionPool\AbstractConnectionPool|string */
     private $connectionPool = '\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool';
 
-    /** @var  string */
+    /** @var \Elasticsearch\Serializers\SerializerInterface|string */
     private $serializer = '\Elasticsearch\Serializers\SmartSerializer';
 
-    /** @var  string */
+    /** @var \Elasticsearch\ConnectionPool\Selectors\SelectorInterface|string */
     private $selector = '\Elasticsearch\ConnectionPool\Selectors\RoundRobinSelector';
 
     /** @var  array */

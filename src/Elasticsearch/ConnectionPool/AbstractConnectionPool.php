@@ -45,7 +45,7 @@ abstract class AbstractConnectionPool implements ConnectionPoolInterface
     /** @var array */
     protected $connectionPoolParams;
 
-    /** @var \Elasticsearch\Connections\ConnectionFactory  */
+    /** @var \Elasticsearch\Connections\ConnectionFactoryInterface */
     protected $connectionFactory;
 
     /**
